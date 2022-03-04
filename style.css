@@ -1,0 +1,393 @@
+/*__________==Google Fonts==__________*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,700&display=swap');
+
+
+/*__________==Universal==__________*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    --primary-background-color: rgb(243, 40, 114);
+    --primary-text-color: rgb(53, 52, 52);
+
+
+}
+body {
+    font-family: 'Poppins';
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.primary-btn {
+    display: inline-block;
+    margin-top: 16px;
+    background-color: var(--primary-background-color);
+    padding: 10px 30px;
+    color: white;
+    border-radius: 38px;
+    outline: 0;
+    border: 0;
+    font-size: 20px;
+    font-weight: 800;
+}
+.primary-btn:hover{
+    background-color: rgb(231, 83, 107);
+    transition: background-color .2s linear;
+}
+
+/*__________==header==__________*/
+
+header {
+
+    color: var(--primary-text-color);
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+}
+
+/*__Nav Design__*/
+
+header > nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.navigation {
+    display: flex;
+}
+header > nav > ul > li {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px 13px;
+
+}
+.link-btn {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+
+/*__Banner Design__*/
+
+.banner {
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+}
+.banner-left > h1 {
+    font-size: 45px;
+}
+.banner-right{
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 475px;
+    height: 475px;
+    overflow: hidden;
+}
+
+.banner-right > img {
+    display: block;
+    margin: auto;
+    width: 440px;
+   
+    
+}
+.banner-right > img:hover{
+    animation-name: increase;
+    animation-duration: .5s;
+    
+    animation-timing-function: linear;
+    animation-fill-mode: forwards
+}
+@keyframes increase {
+  
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform:scale(1.2);
+    }
+}
+.icon-arrow {
+    margin-left: 8px;
+}
+
+
+/*__________==main==__________*/
+
+/*__Sponsors__*/
+
+.sponsor-logos{
+    margin-top: 100px;
+    box-shadow: 
+        inset 0px 11px 8px -10px #CCC,
+        inset 0px -11px 8px -10px #CCC;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 10px;
+}
+.sponsor-logos >img {
+    margin:0px 20px;
+    max-width: 100px;
+    min-width: 50px;
+    flex: 0 0 calc(20% - 40px);
+}
+
+
+/*__Collection__*/
+
+#collection {
+    margin-top: 100px;
+    color: var(--primary-text-color);
+}
+.title {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.cards {
+
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+
+}
+.card {
+    width: 330px;
+    background-color: #fff;
+    padding: 17px 14px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.image-part > img {
+    width: 300px;
+    height: 256px;
+}
+.star {
+    padding-top: 20px;
+}
+.filled{
+color: orange;
+}
+.headign {
+    font-size: 28px;
+}
+.price{
+    font-size: 24px;
+}
+.details {
+    font-size: 14px;
+    max-width: 190px;
+}
+.see-more {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1150px;
+}
+.see-more a {
+    text-decoration: none;
+    color:  rgba(224, 44, 109, 0.87);
+    
+}
+
+
+/*__Quality__*/
+
+#quality {
+    margin-top: 100px;
+}
+.quality-part {
+    display: flex;
+    align-items: center;
+    gap: 96px;
+}
+.text-part>h1 {
+    font-size: 38px;
+    color:  rgba(10, 8, 38, 1);
+    font-weight: 700;
+}
+.text-part >p {
+    margin:16px 0;
+    color:  rgba(108, 108, 108, 1);
+    
+}
+.secondary-btn{
+    display: inline-block;
+    margin-top: 16px;
+    background-color: var(--primary-background-color);
+    padding: 10px 30px;
+    color: white;
+    outline: 0;
+    border: 0;
+    font-size: 16px;
+    font-weight: 800;
+}
+.secondary-btn:hover{
+    background-color: rgb(235, 81, 107);
+    transition: background-color .1s linear;
+}
+
+
+
+/*__________==footer==__________*/
+
+#footer-part{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #080538;
+    color: white;
+    text-align: center;
+    height: 240px;
+}
+.icons > i {
+    background-color: rgba(87, 86, 86, 0.123);
+    border-radius: 100%;
+    padding: 10px;
+}
+
+/*__________==tablets : Ipad Air==__________*/
+  
+
+@media (max-width:1150px) {
+    *{
+        overflow-x: hidden;
+    }
+    header {
+        height: 100%;
+    }
+    /*__nav design__*/
+
+    nav {
+        height: auto;
+        overflow: hidden;
+    }
+    
+    /*__banner design__*/
+
+    .banner {
+        text-align: center;
+        grid-template-columns: 1fr;
+        overflow: hidden;
+        height: 100vh;
+
+    }
+    .banner-right {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+   
+    .banner-left{
+        order: 2;
+    }
+    
+    
+    .sponsor-logos{
+        grid-template-columns: repeat(4,0.5fr);
+        
+     
+    }
+    /*__sponsor design__*/
+
+     /*__collection design__*/
+
+     #collection{
+         height: 100%;
+     }
+     .cards {
+        
+     grid-template-columns: 50% 50%;
+     place-items: center;
+    }
+    .card {
+    margin: 15px 0px;
+    }
+   
+    /*__quality design__*/
+
+    .quality-part{
+        text-align: center;
+        flex-direction: column;
+        margin-top: 75px;
+    }
+    .img-part {
+        order: 1;
+    }
+    .img-part > img {
+        width: 300px;
+        height: 188px;
+        margin-top: 50px;
+    }
+    
+}
+    
+   
+
+/*__________==mobile phones==__________*/
+
+@media (max-width:800px) {
+    
+    h1 {
+        font-size: 28px !important;
+    }
+    p {
+        font-size: 14px !important;
+    }
+
+        /*__header design__*/
+
+        header >nav {
+            justify-content: center;
+            height: auto;
+        }
+        
+        .banner {
+            margin-top: 40px;
+            height: calc(100vh -25px);
+            
+        }
+        .navigation{
+            display: none;
+        }
+        
+        /*__banner design__*/
+        
+        .banner-right{
+            width: 257px;
+            height: 257px;
+        }
+        .banner-right > img {
+
+            width: 300px;
+        }
+        
+         /*__collection design__*/
+ 
+         .cards {
+            grid-template-columns: repeat(1,1fr);
+        }
+        
+    
+}
